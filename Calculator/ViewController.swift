@@ -30,11 +30,13 @@ class ViewController: UIViewController {
     @IBAction func PressNum(_ sender: UIButton) {
         let curr = sender.currentTitle!
         
-        if isTyping {
+        if curr == "pi"{
+            display.text = "3.1415926"
+        } else if isTyping {
             let val = display.text!
             display.text = val + curr
         } else {
-            display!.text = curr
+            display.text = curr
             isTyping = true
         }
         core.setComputedVal(displayValue)
