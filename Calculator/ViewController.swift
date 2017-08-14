@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     var mode = ""
     private var core = CalculatorCore()
     
+    
     var displayValue: Double{
         get{
             return Double(display.text!)!
