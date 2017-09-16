@@ -11,8 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var display: UILabel!
+    var feedbackGenerator:UISelectionFeedbackGenerator? = nil
     
     var isTyping = false;
+    var isHapticOn = false;
     var computedVal:Double = 0
     var result:Double  = 0
     var mode = ""
@@ -30,6 +32,10 @@ class ViewController: UIViewController {
     
     @IBAction func PressNum(_ sender: UIButton) {
         let curr = sender.currentTitle!
+        if !isHapticOn {
+            feedbackGenerator = UISelectionFeedbackGenerator();
+        }
+        feedbackGenerator?.selectionChanged()// generate haptic feedback
         
         if curr == "pi"{
             display.text = "3.1415926"
@@ -45,6 +51,10 @@ class ViewController: UIViewController {
     
     @IBAction func PerformOperations(_ sender: UIButton) {
         let toCompute = sender.currentTitle!
+        if !isHapticOn {
+            feedbackGenerator = UISelectionFeedbackGenerator();
+        }
+        feedbackGenerator?.selectionChanged()// generate haptic feedback
         core.performCalculations(toCompute)
         if core.isUpdateScreen!{
             displayValue = core.result!
