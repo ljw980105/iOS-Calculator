@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CalcViewController: UIViewController {
 
     @IBOutlet weak var display: UILabel!
     var feedbackGenerator:UISelectionFeedbackGenerator? = nil
@@ -19,6 +19,11 @@ class ViewController: UIViewController {
     var result:Double  = 0
     var mode = ""
     private var core = CalculatorCore()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Regular Calculator";
+    }
     
     
     var displayValue: Double{
