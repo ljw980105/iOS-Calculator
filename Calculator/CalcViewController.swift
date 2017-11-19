@@ -22,7 +22,7 @@ class CalcViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Regular Calculator";
+        //self.title = "Regular Calculator";
     }
     
     

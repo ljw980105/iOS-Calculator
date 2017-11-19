@@ -23,17 +23,16 @@ class NavViewController: UIViewController {
     }
     
 
-    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationViewController = segue.destination
-        if segue.identifier == "Regular Calculator"{
-            if let dest = destinationViewController as? CalcViewController{
-                //dest.display.text = String(10000)
-                dest.navigationItem.title = (sender as? UIButton)?.currentTitle;
-            }
+        var destinationViewController = segue.destination
+        if let navigationViewController = destinationViewController as? UINavigationController {
+            destinationViewController = navigationViewController.visibleViewController ?? destinationViewController
+        }
+        if let dest = destinationViewController as? CalcViewController{
+            dest.navigationItem.title = (sender as? UIButton)?.currentTitle
         }
     }
     
