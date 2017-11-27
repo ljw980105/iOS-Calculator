@@ -35,7 +35,7 @@ class NavViewController: UIViewController {
             dest.navigationItem.title = (sender as? UIButton)?.currentTitle
         }
         
-        if let dest = destinationViewController as? ImageShowerController{
+        if let dest = destinationViewController as? ImageShowerControlleer{
             dest.navigationItem.title = (sender as? UIButton)?.currentTitle
         }
     }

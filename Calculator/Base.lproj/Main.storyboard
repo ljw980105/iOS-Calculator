@@ -400,10 +400,10 @@
             </objects>
             <point key="canvasLocation" x="545" y="342"/>
         </scene>
-        <!--Image Shower Controller-->
+        <!--Image Shower Controlleer-->
         <scene sceneID="XFF-gg-BqG">
             <objects>
-                <viewController id="jjD-rW-bvN" customClass="ImageShowerController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jjD-rW-bvN" customClass="ImageShowerControlleer" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wsH-CT-3bm"/>
                         <viewControllerLayoutGuide type="bottom" id="GuW-1s-W7S"/>
@@ -411,13 +411,48 @@
                     <view key="view" contentMode="scaleToFill" id="ADq-17-XGP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VhL-OS-Bnc">
+                                <rect key="frame" x="16" y="72" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwp-SZ-9aY">
+                                <rect key="frame" x="16" y="162" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Av-1X-OWF">
+                                <rect key="frame" x="104" y="106" width="167" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.9415457589285714" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Show Image"/>
+                                <connections>
+                                    <action selector="showText:" destination="jjD-rW-bvN" eventType="touchUpInside" id="gGB-pv-abq"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VAq-Xc-4LI">
+                                <rect key="frame" x="16" y="195" width="343" height="452"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="aYe-RB-WJr"/>
+                    <connections>
+                        <outlet property="result" destination="mwp-SZ-9aY" id="tQ4-RW-HjJ"/>
+                        <outlet property="scrollView" destination="VAq-Xc-4LI" id="eEO-Hx-Sph"/>
+                        <outlet property="textField" destination="VhL-OS-Bnc" id="v6U-k5-bBp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LdZ-MF-sNb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2185" y="836"/>
+            <point key="canvasLocation" x="2184.8000000000002" y="834.33283358320841"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AM2-Sb-NPD">

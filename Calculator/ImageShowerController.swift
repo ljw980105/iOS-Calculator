@@ -8,12 +8,11 @@
 
 import UIKit
 
-class ImageShowerController: UIViewController {
-
+class ImageShowerController: UIViewController{
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        super.viewDidLoad();
     }
-
+    
+    
 }
