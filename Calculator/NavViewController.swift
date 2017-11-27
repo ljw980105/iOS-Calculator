@@ -34,6 +34,10 @@ class NavViewController: UIViewController {
         if let dest = destinationViewController as? CalcViewController{
             dest.navigationItem.title = (sender as? UIButton)?.currentTitle
         }
+        
+        if let dest = destinationViewController as? ImageShowerController{
+            dest.navigationItem.title = (sender as? UIButton)?.currentTitle
+        }
     }
     
 

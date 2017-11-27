@@ -13,6 +13,7 @@
 		04663A311F2E9802009CF0E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04663A301F2E9802009CF0E2 /* Assets.xcassets */; };
 		04663A341F2E9802009CF0E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04663A321F2E9802009CF0E2 /* LaunchScreen.storyboard */; };
 		048D48E51F3413DF0025BF24 /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D48E41F3413DF0025BF24 /* CalculatorModel.swift */; };
+		048F97F41FCBCB3600A2805F /* ImageShowerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F97F31FCBCB3600A2805F /* ImageShowerController.swift */; };
 		04C6039D1FB7E9A3009BE3EE /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C6039C1FB7E9A3009BE3EE /* NavViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		04663A331F2E9802009CF0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04663A351F2E9802009CF0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		048D48E41F3413DF0025BF24 /* CalculatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
+		048F97F31FCBCB3600A2805F /* ImageShowerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageShowerController.swift; sourceTree = "<group>"; };
 		04C6039C1FB7E9A3009BE3EE /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 				04C6039C1FB7E9A3009BE3EE /* NavViewController.swift */,
 				04663A291F2E9802009CF0E2 /* AppDelegate.swift */,
 				04663A2B1F2E9802009CF0E2 /* CalcViewController.swift */,
+				048F97F31FCBCB3600A2805F /* ImageShowerController.swift */,
 				04663A2D1F2E9802009CF0E2 /* Main.storyboard */,
 				048D48E41F3413DF0025BF24 /* CalculatorModel.swift */,
 				04663A301F2E9802009CF0E2 /* Assets.xcassets */,
@@ -103,6 +106,7 @@
 					04663A251F2E9802009CF0E2 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = NDBTK98VL3;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -147,6 +151,7 @@
 				04C6039D1FB7E9A3009BE3EE /* NavViewController.swift in Sources */,
 				04663A2C1F2E9802009CF0E2 /* CalcViewController.swift in Sources */,
 				04663A2A1F2E9802009CF0E2 /* AppDelegate.swift in Sources */,
+				048F97F41FCBCB3600A2805F /* ImageShowerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +281,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mrproli.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -289,7 +295,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mrproli.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
