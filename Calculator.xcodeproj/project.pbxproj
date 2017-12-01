@@ -14,6 +14,7 @@
 		04663A341F2E9802009CF0E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04663A321F2E9802009CF0E2 /* LaunchScreen.storyboard */; };
 		048D48E51F3413DF0025BF24 /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D48E41F3413DF0025BF24 /* CalculatorModel.swift */; };
 		048F97F81FCBD17100A2805F /* ImageShowerControlleer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F97F71FCBD17100A2805F /* ImageShowerControlleer.swift */; };
+		049A7F9C1FD116A100F370B5 /* CoreMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A7F9B1FD116A100F370B5 /* CoreMotionViewController.swift */; };
 		04C6039D1FB7E9A3009BE3EE /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C6039C1FB7E9A3009BE3EE /* NavViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		04663A351F2E9802009CF0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		048D48E41F3413DF0025BF24 /* CalculatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
 		048F97F71FCBD17100A2805F /* ImageShowerControlleer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageShowerControlleer.swift; sourceTree = "<group>"; };
+		049A7F9B1FD116A100F370B5 /* CoreMotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionViewController.swift; sourceTree = "<group>"; };
 		04C6039C1FB7E9A3009BE3EE /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,7 @@
 				04663A291F2E9802009CF0E2 /* AppDelegate.swift */,
 				04663A2B1F2E9802009CF0E2 /* CalcViewController.swift */,
 				04663A2D1F2E9802009CF0E2 /* Main.storyboard */,
+				049A7F9B1FD116A100F370B5 /* CoreMotionViewController.swift */,
 				048D48E41F3413DF0025BF24 /* CalculatorModel.swift */,
 				04663A301F2E9802009CF0E2 /* Assets.xcassets */,
 				04663A321F2E9802009CF0E2 /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 				048F97F81FCBD17100A2805F /* ImageShowerControlleer.swift in Sources */,
 				04663A2C1F2E9802009CF0E2 /* CalcViewController.swift in Sources */,
 				04663A2A1F2E9802009CF0E2 /* AppDelegate.swift in Sources */,
+				049A7F9C1FD116A100F370B5 /* CoreMotionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
