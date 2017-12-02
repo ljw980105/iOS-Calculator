@@ -3,8 +3,14 @@ A basic calculator app coded using swift. - Now it's rather a collection of the 
 
 ## Contents
 * Basic Calculator
+    * UIButton, UILabel and MVC
+    * Showing master view controller instead of detail
 * Graphic Calculator (under construction)
-* Base Conversion Calculator (under construction)
-* ImagerShower (shows an image by entering the URL in the text field)
+* Core Motion Demo
+    * Gyroscope, accelerometer, magnetometer, and compass
+* ImageShower
+    * shows an image by entering the URL in the text field
+    * UIActivityIndicator, UIScrollView, and multithreading
+
 
 #### Thanks for stopping by! :)

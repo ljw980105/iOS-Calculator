@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CalcViewController: UIViewController {
+class CalcViewController: UIViewController, UISplitViewControllerDelegate{
 
     @IBOutlet weak var display: UILabel!
     var feedbackGenerator:UISelectionFeedbackGenerator? = nil
@@ -20,9 +20,19 @@ class CalcViewController: UIViewController {
     var mode = ""
     private var core = CalculatorCore()
     
+    override func awakeFromNib() { // called very early
+        self.splitViewController?.delegate = self
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.title = "Regular Calculator";
+    }
+    
+    //start at master view controller
+    //args: sender, collapse vc, master vc (collapse collapse_vc into master)
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
+        return true
     }
     
     
