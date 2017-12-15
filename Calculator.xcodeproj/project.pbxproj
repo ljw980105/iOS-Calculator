@@ -16,6 +16,7 @@
 		048F97F81FCBD17100A2805F /* ImageShowerControlleer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F97F71FCBD17100A2805F /* ImageShowerControlleer.swift */; };
 		049A7F9C1FD116A100F370B5 /* CoreMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A7F9B1FD116A100F370B5 /* CoreMotionViewController.swift */; };
 		04C6039D1FB7E9A3009BE3EE /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C6039C1FB7E9A3009BE3EE /* NavViewController.swift */; };
+		04DD2D421FE4780C00ED8591 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD2D411FE4780C00ED8591 /* MyTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		048F97F71FCBD17100A2805F /* ImageShowerControlleer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageShowerControlleer.swift; sourceTree = "<group>"; };
 		049A7F9B1FD116A100F370B5 /* CoreMotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionViewController.swift; sourceTree = "<group>"; };
 		04C6039C1FB7E9A3009BE3EE /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
+		04DD2D411FE4780C00ED8591 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				04663A291F2E9802009CF0E2 /* AppDelegate.swift */,
 				04663A2B1F2E9802009CF0E2 /* CalcViewController.swift */,
 				04663A2D1F2E9802009CF0E2 /* Main.storyboard */,
+				04DD2D411FE4780C00ED8591 /* MyTableViewController.swift */,
 				049A7F9B1FD116A100F370B5 /* CoreMotionViewController.swift */,
 				048D48E41F3413DF0025BF24 /* CalculatorModel.swift */,
 				04663A301F2E9802009CF0E2 /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				048D48E51F3413DF0025BF24 /* CalculatorModel.swift in Sources */,
+				04DD2D421FE4780C00ED8591 /* MyTableViewController.swift in Sources */,
 				04C6039D1FB7E9A3009BE3EE /* NavViewController.swift in Sources */,
 				048F97F81FCBD17100A2805F /* ImageShowerControlleer.swift in Sources */,
 				04663A2C1F2E9802009CF0E2 /* CalcViewController.swift in Sources */,

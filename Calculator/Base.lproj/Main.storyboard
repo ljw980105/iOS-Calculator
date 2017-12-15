@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QGp-yU-BYe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QGp-yU-BYe">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -343,65 +343,6 @@
             </objects>
             <point key="canvasLocation" x="-1111" y="15"/>
         </scene>
-        <!--Nav View Controller-->
-        <scene sceneID="0rk-y7-27Q">
-            <objects>
-                <viewController id="t58-c4-FbR" customClass="NavViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rjp-bf-LhI"/>
-                        <viewControllerLayoutGuide type="bottom" id="3MI-5V-Hdd"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="M1h-hJ-0qW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="n3t-y2-NbB">
-                                <rect key="frame" x="67" y="237" width="240" height="192"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRw-4c-S9J">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Regular Calculator"/>
-                                        <connections>
-                                            <segue destination="2q0-X2-R6O" kind="showDetail" id="R9y-qk-7FF"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2T-g8-AYA">
-                                        <rect key="frame" x="0.0" y="48" width="240" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Graphic Calculator"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOL-Vs-nQQ">
-                                        <rect key="frame" x="0.0" y="96" width="240" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Core Motion"/>
-                                        <connections>
-                                            <segue destination="dkf-9a-oKT" kind="showDetail" id="66v-tE-04C"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdU-FJ-coE">
-                                        <rect key="frame" x="0.0" y="144" width="240" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="ImageShower"/>
-                                        <connections>
-                                            <segue destination="8m5-s0-BUt" kind="showDetail" id="bf0-6S-vGP"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="n3t-y2-NbB" firstAttribute="centerY" secondItem="M1h-hJ-0qW" secondAttribute="centerY" id="0n5-Mh-TnO"/>
-                            <constraint firstItem="n3t-y2-NbB" firstAttribute="centerX" secondItem="M1h-hJ-0qW" secondAttribute="centerX" id="Ly5-Eh-XSp"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="xuu-Jr-3rZ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h5Z-Vi-1iY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="545" y="342"/>
-        </scene>
         <!--Core Motion View Controller-->
         <scene sceneID="rIi-NH-nDD">
             <objects>
@@ -548,6 +489,7 @@
         <!--Navigation Controller-->
         <scene sceneID="AM2-Sb-NPD">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q5F-FR-yPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X4x-4U-Fns" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Udi-uP-k2Z">
@@ -556,10 +498,9 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="t58-c4-FbR" kind="relationship" relationship="rootViewController" id="be3-si-TAt"/>
+                        <segue destination="oxI-UC-hjh" kind="relationship" relationship="rootViewController" id="R2r-WL-UhW"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q5F-FR-yPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-296" y="342.72863568215894"/>
         </scene>
@@ -580,6 +521,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxt-RD-CKV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-296" y="-379.61019490254876"/>
+        </scene>
+        <!--My Table View Controller-->
+        <scene sceneID="9tq-PR-oms">
+            <objects>
+                <tableViewController id="oxI-UC-hjh" customClass="MyTableViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Hel-0A-nas">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="Tvi-j3-tpt">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="52" id="cff-uT-x4F">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cff-uT-x4F" id="ZWq-q8-Ve5">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="51.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="2q0-X2-R6O" kind="showDetail" id="inx-vW-LZK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="OGb-xP-QAS">
+                                        <rect key="frame" x="0.0" y="52" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OGb-xP-QAS" id="v4S-0Z-lmX">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="X5i-ZK-WXh">
+                                        <rect key="frame" x="0.0" y="96" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X5i-ZK-WXh" id="PSw-u7-qhf">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="dkf-9a-oKT" kind="showDetail" id="E64-O6-xuI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="oTk-2Z-uyO">
+                                        <rect key="frame" x="0.0" y="140" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oTk-2Z-uyO" id="lI7-NL-L0O">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="8m5-s0-BUt" kind="showDetail" id="Ity-vH-O3w"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="oxI-UC-hjh" id="dt4-pg-2ie"/>
+                            <outlet property="delegate" destination="oxI-UC-hjh" id="JEv-z0-D6M"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="mbA-nr-iQX"/>
+                    <connections>
+                        <outlet property="CoreMo" destination="X5i-ZK-WXh" id="eVf-75-DgQ"/>
+                        <outlet property="GraphCalc" destination="OGb-xP-QAS" id="EYe-Za-ame"/>
+                        <outlet property="ImgShower" destination="oTk-2Z-uyO" id="pEC-si-DYz"/>
+                        <outlet property="RegCalc" destination="cff-uT-x4F" id="v1g-NO-bMD"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O85-zQ-fGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="574" y="342"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9O6-vu-UoX">
@@ -619,6 +632,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="R9y-qk-7FF"/>
+        <segue reference="inx-vW-LZK"/>
     </inferredMetricsTieBreakers>
 </document>
