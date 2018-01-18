@@ -17,6 +17,9 @@
 		049A7F9C1FD116A100F370B5 /* CoreMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A7F9B1FD116A100F370B5 /* CoreMotionViewController.swift */; };
 		04C6039D1FB7E9A3009BE3EE /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C6039C1FB7E9A3009BE3EE /* NavViewController.swift */; };
 		04DD2D421FE4780C00ED8591 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD2D411FE4780C00ED8591 /* MyTableViewController.swift */; };
+		04DF6CB11FE8340D003E7316 /* testIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DF6CB01FE8340D003E7316 /* testIcon.png */; };
+		04FF38502010465A00203820 /* HapticFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF384F2010465A00203820 /* HapticFeedbackViewController.swift */; };
+		04FF385220104ED000203820 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 04FF385120104ED000203820 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		049A7F9B1FD116A100F370B5 /* CoreMotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionViewController.swift; sourceTree = "<group>"; };
 		04C6039C1FB7E9A3009BE3EE /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 		04DD2D411FE4780C00ED8591 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		04DF6CB01FE8340D003E7316 /* testIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testIcon.png; sourceTree = "<group>"; };
+		04FF384F2010465A00203820 /* HapticFeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackViewController.swift; sourceTree = "<group>"; };
+		04FF385120104ED000203820 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,8 @@
 		04663A281F2E9802009CF0E2 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				04FF385120104ED000203820 /* README.md */,
+				04DF6CB01FE8340D003E7316 /* testIcon.png */,
 				048F97F71FCBD17100A2805F /* ImageShowerControlleer.swift */,
 				04C6039C1FB7E9A3009BE3EE /* NavViewController.swift */,
 				04663A291F2E9802009CF0E2 /* AppDelegate.swift */,
@@ -75,6 +83,7 @@
 				04663A301F2E9802009CF0E2 /* Assets.xcassets */,
 				04663A321F2E9802009CF0E2 /* LaunchScreen.storyboard */,
 				04663A351F2E9802009CF0E2 /* Info.plist */,
+				04FF384F2010465A00203820 /* HapticFeedbackViewController.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -140,7 +149,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DF6CB11FE8340D003E7316 /* testIcon.png in Resources */,
 				04663A341F2E9802009CF0E2 /* LaunchScreen.storyboard in Resources */,
+				04FF385220104ED000203820 /* README.md in Resources */,
 				04663A311F2E9802009CF0E2 /* Assets.xcassets in Resources */,
 				04663A2F1F2E9802009CF0E2 /* Main.storyboard in Resources */,
 			);
@@ -155,6 +166,7 @@
 			files = (
 				048D48E51F3413DF0025BF24 /* CalculatorModel.swift in Sources */,
 				04DD2D421FE4780C00ED8591 /* MyTableViewController.swift in Sources */,
+				04FF38502010465A00203820 /* HapticFeedbackViewController.swift in Sources */,
 				04C6039D1FB7E9A3009BE3EE /* NavViewController.swift in Sources */,
 				048F97F81FCBD17100A2805F /* ImageShowerControlleer.swift in Sources */,
 				04663A2C1F2E9802009CF0E2 /* CalcViewController.swift in Sources */,
