@@ -1,5 +1,5 @@
-# iOS Calculator
-A basic calculator app coded using swift. - Now it's rather a collection of the apps I've built.
+# iOS - TestBench
+A testbench for my iOS projects - it's rather a collection of the apps I've built.
 
 ## Contents
 * Basic Calculator

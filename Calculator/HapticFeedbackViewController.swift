@@ -7,19 +7,28 @@
 //
 
 import UIKit
+import MarqueeLabel
 
 class HapticFeedbackViewController: UIViewController {
     let selectionHaptic = UISelectionFeedbackGenerator()
     var impactHaptic = UIImpactFeedbackGenerator(style: .light)
     let notificationHaptic = UINotificationFeedbackGenerator()
     @IBOutlet weak var notificationType: UILabel!
+    @IBOutlet weak var marqueeLabel: MarqueeLabel!
     var impactLevel = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        marqueeLabel.text = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
         notificationType.text = "Error"
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //marqueeLabel = MarqueeLabel.init(frame: view.bounds, duration: 5.0, fadeLength: 500)
     }
 
     override func didReceiveMemoryWarning() {
