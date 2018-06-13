@@ -1,12 +1,15 @@
 PODS:
+  - BDKCollectionIndexView (2.2.2)
   - MarqueeLabel/Swift (3.1.4)
 
 DEPENDENCIES:
+  - BDKCollectionIndexView
   - MarqueeLabel/Swift
 
 SPEC CHECKSUMS:
+  BDKCollectionIndexView: 489a0c57d27fafe6944ef61e5a4192902148ea84
   MarqueeLabel: bf768455fe88d427f71476ebb23f9092b660f40b
 
-PODFILE CHECKSUM: 711f846d68330a94df8a744ef14cbf373be05ab8
+PODFILE CHECKSUM: 703b5a929f238dd4418dcaad19fb2398877282a3
 
 COCOAPODS: 1.3.1

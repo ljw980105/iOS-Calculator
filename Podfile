@@ -7,5 +7,6 @@ target 'Calculator' do
 
   # Pods for Calculator
   pod 'MarqueeLabel/Swift'
+  pod 'BDKCollectionIndexView'
 
 end

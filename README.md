@@ -13,6 +13,10 @@ A testbench for my iOS projects - it's rather a collection of the apps I've buil
     * UIActivityIndicator, UIScrollView, and multithreading
 * Haptic Feedback Simulator
     * UISelectionFeedbackGenerator, UIImpactFeedbackGenerator, UINotificationFeedbackGenerator
+* Natural Language Processor
+    * Uses NSLinguisticTagger to determine if a noun is singular
+* BDKCollectionIndexView -> Testing
+    * Looks fine on iPhones, but will clutter on iPads
 
 
 #### Thanks for stopping by! :)
