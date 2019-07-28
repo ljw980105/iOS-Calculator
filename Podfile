@@ -8,5 +8,6 @@ target 'Calculator' do
   # Pods for Calculator
   pod 'MarqueeLabel/Swift'
   pod 'BDKCollectionIndexView'
+  pod 'XLPagerTabStrip', '~> 8.1'
 
 end

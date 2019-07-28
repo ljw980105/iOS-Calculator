@@ -16,6 +16,8 @@ class MyTableViewController: UITableViewController {
     @IBOutlet weak var CoreMo: UITableViewCell!
     @IBOutlet weak var ImgShower: UITableViewCell!
     @IBOutlet weak var GraphCalc: UITableViewCell!
+    @IBOutlet weak var haptic: UITableViewCell!
+    @IBOutlet weak var collectionIndexViewBtn: UITableViewCell!
     
     var documentsUrl: URL {
         return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
@@ -67,8 +69,36 @@ class MyTableViewController: UITableViewController {
         }
         
         if let dest = destinationViewController as? CoreMotionViewController{
-            dest.navigationItem.title = (sender as? UITableViewCell)?.textLabel?.text        }
+            dest.navigationItem.title = (sender as? UITableViewCell)?.textLabel?.text
+        }
+        
+        if let dest = destinationViewController as? HapticFeedbackViewController {
+            dest.navigationItem.title = (sender as? UITableViewCell)?.textLabel?.text
+        }
+        
+        if let dest = destinationViewController as? IndexViewCollectionViewController {
+            dest.navigationItem.title = (sender as? UITableViewCell)?.textLabel?.text
+        }
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 4 {
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "haptic", sender: self)
+            }
+        }
+        if indexPath.row == 5 {
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "colorGrid", sender: self)
+            }
+        }
+        if indexPath.row == 6 {
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "spinner", sender: self)
+            }
+        }
+    }
+    
     
 
 }

@@ -8,6 +8,7 @@
 
 import UIKit
 import BDKCollectionIndexView
+import XLPagerTabStrip
 
 private let reuseIdentifier = "indexCell"
 
@@ -21,7 +22,8 @@ class IndexViewCell: UICollectionViewCell{
     
 }
 
-class IndexViewCollectionViewController: UICollectionViewController {
+class IndexViewCollectionViewController: UICollectionViewController, IndicatorInfoProvider {
+    
     let indexTitles = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N"]
     var indexView: BDKCollectionIndexView!
 
@@ -54,7 +56,7 @@ class IndexViewCollectionViewController: UICollectionViewController {
         indexView.tintColor = UIColor.blue
         indexView.addTarget(self, action: #selector(self.indexViewValueChanged(sender:)), for: .valueChanged)
         self.view.addSubview(indexView!)
-        self.view.bringSubview(toFront: indexView!)
+        self.view.bringSubviewToFront(indexView!)
     }
     
     @objc func indexViewValueChanged(sender: BDKCollectionIndexView){
@@ -106,5 +108,9 @@ class IndexViewCollectionViewController: UICollectionViewController {
         }
     
         return cell
+    }
+    
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return IndicatorInfo(title: "Collection")
     }
 }
