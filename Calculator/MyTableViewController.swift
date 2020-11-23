@@ -92,13 +92,8 @@ class MyTableViewController: UITableViewController {
                 self.performSegue(withIdentifier: "colorGrid", sender: self)
             }
         }
-        if indexPath.row == 6 {
-            DispatchQueue.main.async {
-                self.performSegue(withIdentifier: "spinner", sender: self)
-            }
+        if indexPath.row == 8 {
+            navigationController?.pushViewController(PrizeWheelViewController(), animated: true)
         }
     }
-    
-    
-
 }

@@ -25,7 +25,7 @@ class SpinnerViewController: UIViewController, IndicatorInfoProvider {
     }
     
     @IBAction func dismiss(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     lazy var heartbeatPath: UIBezierPath = {
@@ -46,8 +46,6 @@ class SpinnerViewController: UIViewController, IndicatorInfoProvider {
         spinner.image = UIImage(named: "divSymbol")
         spinner.enableBackDrop = true
         spinner.start()
-        
-        
     }
     
     @IBAction func endAnimation(_ sender: UIBarButtonItem) {
