@@ -10,7 +10,7 @@ import UIKit
 import SpriteKit
 
 class PrizeWheelScene: SKScene {
-    var circle = SKSpriteNode()
+    var wheel = SKSpriteNode()
     var labels = SKSpriteNode()
     var tip: SKSpriteNode!
     let prizes = PrizeWheelPrize.prizes
@@ -20,31 +20,35 @@ class PrizeWheelScene: SKScene {
     var alert: (String, @escaping (UIAlertAction) -> Void) -> Void = { _, _ in }
     var rotationEnded = false
     let radius: CGFloat = 180
-    let wheelColors = [UIColor.red, UIColor.orange, UIColor.green]
+    let wheelColors = [
+        UIColor(red: 83/255.0, green: 211/255.0, blue: 55/255.0, alpha: 1),
+        UIColor(red: 247/255.0, green: 208/255.0, blue: 2/255.0, alpha: 1)
+    ]
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
         
         addBackground()
-        setupPrizeWheel(radius: radius, center: .zero)
+        setupPrizeWheel(radius: radius, origin: .zero)
         setupSpinnerTip(radius: radius + 60)
         
         physicsWorld.contactDelegate = self
     }
     
-    func setupPrizeWheel(radius: CGFloat, center: CGPoint) {
+    func setupPrizeWheel(radius: CGFloat, origin: CGPoint) {
+        let center = CGPoint(x: size.width/2, y: size.height/2)
         let degreesPartition = CGFloat(360.0) / CGFloat(prizes.count)
         var totalDegrees: CGFloat = 0
         for (i, prize) in prizes.enumerated() {
             let path = CGMutablePath()
-            path.move(to: center)
-            path.addArc(center: center, radius: radius, startAngle: totalDegrees * DEGREE_TO_RADIAN,
+            path.move(to: origin)
+            path.addArc(center: origin, radius: radius, startAngle: totalDegrees * DEGREE_TO_RADIAN,
                         endAngle: (totalDegrees + degreesPartition) * DEGREE_TO_RADIAN, clockwise: false)
             let node = SKShapeNode(path: path)
-            node.position = center
-            node.zPosition = 1
+            node.position = origin
+            node.zPosition = 2
             node.lineWidth = 2.0
-            let color = wheelColors[i % 3]
+            let color = wheelColors[i % wheelColors.count]
             node.strokeColor = color
             node.fillColor = color
             
@@ -61,12 +65,25 @@ class PrizeWheelScene: SKScene {
             label.position = CGPoint(x: xl, y: yl)
             node.addChild(label)
             
-            circle.addChild(node)
+            wheel.addChild(node)
             totalDegrees += degreesPartition
         }
-        circle.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        circle.position = CGPoint(x: size.width/2, y: size.height/2)
-        addChild(circle)
+        wheel.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        wheel.position = center
+        addChild(wheel)
+        
+        let backgroundWheel = SKShapeNode(circleOfRadius: radius + 10)
+        backgroundWheel.position = center
+        backgroundWheel.zPosition = 1
+        backgroundWheel.fillColor = .black
+        backgroundWheel.strokeColor = .clear
+        addChild(backgroundWheel)
+        
+        let dkCenter = SKSpriteNode(imageNamed: "dk-center")
+        dkCenter.position = center
+        dkCenter.zPosition = 4
+        dkCenter.size = CGSize(width: 80, height: 80)
+        addChild(dkCenter)
     }
     
     func addBackground() {
@@ -80,7 +97,7 @@ class PrizeWheelScene: SKScene {
     
     func setupSpinnerTip(radius: CGFloat) {
         tip = SKSpriteNode(imageNamed: "spinnerTip")
-        tip.zPosition = 2
+        tip.zPosition = 3
         tip.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         tip.position = CGPoint(x: size.width/2, y: size.height/2 + radius)
         
@@ -109,7 +126,7 @@ class PrizeWheelScene: SKScene {
         let directionFactor: CGFloat = lastPoint.y - firstPoint.y > 0 ? 1 : -1
         let action = SKAction.rotate(byAngle: degreesToSpin * directionFactor, duration: 1)
         action.timingMode = .easeOut
-        circle.run(action)
+        wheel.run(action)
         tip.run(.sequence([
             .wait(forDuration: 1.01),
             .move(to: CGPoint(x: size.width/2, y: size.height/2 + radius + 28), duration: 0.05)
@@ -118,7 +135,7 @@ class PrizeWheelScene: SKScene {
     
     func checkWinnings(for contact: SKPhysicsContact) {
         if contact.bodyB == tip.physicsBody {
-            for (i, prize) in circle.children.enumerated() {
+            for (i, prize) in wheel.children.enumerated() {
                 if contact.bodyA == prize.physicsBody {
                     alert("You won prize \(self.prizes[i].name)") { [weak self] _ in
                         self?.resetTip()
@@ -130,12 +147,12 @@ class PrizeWheelScene: SKScene {
     
     func resetTip() {
         tip.physicsBody?.contactTestBitMask = 0
-        circle.children.forEach { $0.physicsBody?.contactTestBitMask = 0 }
+        wheel.children.forEach { $0.physicsBody?.contactTestBitMask = 0 }
         tip.run(
-            .move(to:CGPoint(x: self.size.width/2, y: self.size.height/2 + self.radius + 60),
+            .move(to: CGPoint(x: size.width/2, y: size.height/2 + radius + 60),
                   duration: 0.05)) { [weak self] in
             self?.tip.physicsBody?.contactTestBitMask = 0b0010
-            self?.circle.children.forEach { $0.physicsBody?.contactTestBitMask = 0b0001 }
+            self?.wheel.children.forEach { $0.physicsBody?.contactTestBitMask = 0b0001 }
         }
     }
 }
